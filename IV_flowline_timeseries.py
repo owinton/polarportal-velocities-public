@@ -184,16 +184,16 @@ def IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile
         Y_min -= correction
 
     # Bedrock
-    bedmachine = Dataset(bed_file, 'r')
-    X_b = bedmachine.variables['x'][:].filled()
-    Y_b = bedmachine.variables['y'][:].filled()
-    bed = bedmachine.variables['bed'][:].filled()
-    bed_mask = bedmachine.variables['mask'][:].filled()
-    x_b_id = np.logical_and(X_b < X_max, X_b > X_min)
-    y_b_id = np.logical_and(Y_b < Y_max, Y_b > Y_min)
-    ocean = (bed_mask == 0)
-    ocean = ocean[y_b_id][:, x_b_id]
-    [x_ocean, y_ocean] = np.meshgrid(X_b[x_b_id], Y_b[y_b_id])
+    # bedmachine = Dataset(bed_file, 'r')
+    # X_b = bedmachine.variables['x'][:].filled()
+    # Y_b = bedmachine.variables['y'][:].filled()
+    # bed = bedmachine.variables['bed'][:].filled()
+    # bed_mask = bedmachine.variables['mask'][:].filled()
+    # x_b_id = np.logical_and(X_b < X_max, X_b > X_min)
+    # y_b_id = np.logical_and(Y_b < Y_max, Y_b > Y_min)
+    # ocean = (bed_mask == 0)
+    # ocean = ocean[y_b_id][:, x_b_id]
+    # [x_ocean, y_ocean] = np.meshgrid(X_b[x_b_id], Y_b[y_b_id])
 
     # 2D velocity
     vel[mask] = np.nan  # Set masked values to nan
@@ -216,9 +216,9 @@ def IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile
     levels = [1, 2, 4, 6] + list(range(10, 400, 20))
     x_v_id = np.logical_and(X_v.filled() < X_max, X_v.filled() > X_min)
     y_v_id = np.logical_and(Y_v.filled() < Y_max, Y_v.filled() > Y_min)
-    ax2.contourf(X_b[x_b_id], Y_b[y_b_id], bed[y_b_id][:, x_b_id], cmap=plt.cm.copper)
+    # ax2.contourf(X_b[x_b_id], Y_b[y_b_id], bed[y_b_id][:, x_b_id], cmap=plt.cm.copper)
     cs = ax2.contourf(X_v[x_v_id], Y_v[y_v_id], vm[y_v_id][:,x_v_id], levels, cmap=cmap)
-    ax2.scatter(x_ocean[ocean], y_ocean[ocean], color=plt.cm.tab10.colors[0], s=0.15)
+    # ax2.scatter(x_ocean[ocean], y_ocean[ocean], color=plt.cm.tab10.colors[0], s=0.15)
     cbar = fig.colorbar(cs)
     cbar.set_label('Ice velocity [m/day]')
     cbar.set_ticks([1, 67, 235, 350])
