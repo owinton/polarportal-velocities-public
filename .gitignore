@@ -1,0 +1,32 @@
+# Ignore everything
+*
+!*/
+
+# But not the scripts
+!.gitignore
+!IV_download_data.py
+!IV_flowline_timeseries.py
+!IV_ftp_script.py
+!IV_mean.py
+!IV_process_all.py
+
+
+
+# And not the static data 
+!/data/Flowlines/**
+!/data/Glacier_front_lines/**
+
+
+#!/data
+#/data/*
+#!/data/Flowlines
+#!/data/Glacier_front_lines
+#/data/Glacier_front_lines/*
+#!/data/Glacier_front_lines/line
+
+
+
+#/data/*
+#!/data/Flowlines
+#!/data/Glacier_front_lines
+#!/data/Glacier_front_lines/line

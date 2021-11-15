@@ -1,0 +1,49 @@
+#GlacierName	#LayerName	#StartYear
+Academy	Academy	1999
+Akullersuup Sermia	AS	1999
+Daugaard Jensen	Daugaard_Jensen	1999
+Døcker Smith	DS	1999
+C.H.Ostenfeld	Ostenfeld	1999
+Fenris	Fenris	1999
+Hagen	Hagen	1985
+Hayes	Hayes	1999
+Helheim	Helheim	1999
+Humboldt	Humboldt	1999
+IkertivaqA	IkertivaqA	1999
+IkertivaqB	IkertivaqB	1999
+IkertivaqC	IkertivaqC	1999
+IkertivaqD	IkertivaqD	1999
+Ingia	Ingia	1999
+Jakobshavn	Jakobshavn	1999
+Kangerdluarssup_Sermia	Kangerdluarssup	1999
+Kangerdlugssuaq	Kangerdlugssuaq	1999
+Kangerdlugssup Sermerssua	Kangerdlugssup	1999
+Kangiata_Nunaata_Sermia	KNS	1999
+Kangigdleq	Kangigdleq	1999
+Kong Oscars	KongOscars	1999
+Lille	Lille	1999
+Midgaard	Midgaard	1999
+Nioghalvfjerdsfjorden	79F	1999
+Nunatakassaap Sermia	Nunatakassaap	1999
+Nunatakavsaup Sermia	Nunatakavsaup	1999
+Perdlerfiup Sermia	Perdlerfiup	1999
+Petermann	Petermann	1999
+Qajuuttap	Qajuuttap	2000
+Rink	Rink	1999
+Ryder	Ryder	1999
+Sermeq Avannarleq	Avannarleq	1999
+Sermeq Silardleq	Silardleq	1999
+Sermilik	Sermilik	1999
+Steensby	Steensby	1999
+Steenstrup	Steenstrup	1999
+Store	Store	1999
+Storstrømmen	Storstrømmen	1999
+Tingmjarmiut	Tingmjarmiut	1999
+Umiamako	Umiamako	1999
+UpernavikA	UpernavikA	1999
+UpernavikB	UpernavikB	1999
+UpernavikC	UpernavikC	1999
+UpernavikD	UpernavikD	1999
+UpernavikE	UpernavikE	1999
+UpernavikF	UpernavikF	1999
+Zachariae	Zachariae	1999
