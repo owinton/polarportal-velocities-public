@@ -1,6 +1,5 @@
-# Ignore everything
-*
-!*/
+# Ignore everything in directory
+/*
 
 # But not the scripts
 !.gitignore
@@ -10,25 +9,14 @@
 !IV_mean.py
 !IV_process_all.py
 
+# Ignore .DS_Store
+**/.DS_Store
 
-
-# And not the static data 
+# Whitelist data folder
+!data/
 data/*
-!/data/Flowlines/**
-!/data/Glacier_front_lines/**
-!*/data/iv_colormap.txt
-
-
-#!/data
-#/data/*
-#!/data/Flowlines
-#!/data/Glacier_front_lines
-#/data/Glacier_front_lines/*
-#!/data/Glacier_front_lines/line
-
-
-
-#/data/*
-#!/data/Flowlines
-#!/data/Glacier_front_lines
-#!/data/Glacier_front_lines/line
+!data/Flowlines/
+!data/iv_colormap.txt
+!data/Glacier_front_lines/
+data/Glacier_front_lines/*
+!data/Glacier_front_lines/lines/
