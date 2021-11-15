@@ -13,9 +13,10 @@
 
 
 # And not the static data 
+data/*
 !/data/Flowlines/**
 !/data/Glacier_front_lines/**
-!/data/iv_colormap.txt
+!*/data/iv_colormap.txt
 
 
 #!/data
