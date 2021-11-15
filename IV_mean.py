@@ -32,12 +32,14 @@ def IV_mean(IV_dir, IV_mean_dir):
         smb_year = latest_year - 1
     else:
         smb_year = latest_year
+
     latest_mean = int(IV_mean_list[-1][-12:-8])
+    print(latest_mean, smb_year)
     if latest_mean < smb_year:  # Make new average if a full year SMB year of new velocities are acailable
         years_array = []
         print('Updating mean velocity with SMB-year %d' % (smb_year))
         for i, file in enumerate(IV_list):  # Get each velocity file
-            print('File {} of {}'.format(i+1, len(IV_list)))
+            print('{}. File {} of {}'.format(file, i+1, len(IV_list)))
             IV_data = Dataset(IV_dir + '/' + file, 'r')
             v_variable = IV_data.variables['land_ice_surface_velocity_magnitude'][:]
             v_std_variable = IV_data.variables['land_ice_surface_velocity_magnitude_std'][:]
@@ -48,6 +50,7 @@ def IV_mean(IV_dir, IV_mean_dir):
             v[mask] = np.nan
             v[uncertainty_mask] = np.nan
             years_array.append(v)
+
             if i == 0:
                 start_file = file
             # The last velocity dataset included is from the september of the current available smb-year
