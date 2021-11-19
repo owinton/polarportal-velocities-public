@@ -55,6 +55,10 @@ def IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile
             print('NotImplementedError. Potentially that {} contains multi-part geometry in {}\'th part. A workaround implemented, but check for other possible errors.'.format(CFL_file, i))
 
 
+    # Debugging
+    print(type(cfl))
+    print(type(cfl.crs))
+    print(cfl.crs)
     # CFL come in lat-lon, transform to polar stereographic (velocity data projection)
     inProj = pyproj.Proj(cfl.crs['init'])
     outProj = pyproj.Proj(proj='stere', datum="WGS84", lat_0=90, lat_ts=70, lon_0=-45, units="m")

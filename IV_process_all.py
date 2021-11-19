@@ -67,7 +67,7 @@ glaciers = [
 glaciers = ['Jakobshavn']
 
 # Download new velocity files, get list of files, and get/create most recent mean velocity file
-IV_download_data()
+# IV_download_data()
 IV_list = [i for i in (os.listdir(IV_dir)) if i.endswith('.nc')]
 IV_list.sort()
 mean_IV_file = IV_mean(IV_dir, IV_mean_dir)

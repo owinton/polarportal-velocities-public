@@ -34,7 +34,6 @@ def IV_mean(IV_dir, IV_mean_dir):
         smb_year = latest_year
 
     latest_mean = int(IV_mean_list[-1][-12:-8])
-    print(latest_mean, smb_year)
     if latest_mean < smb_year:  # Make new average if a full year SMB year of new velocities are acailable
         years_array = []
         print('Updating mean velocity with SMB-year %d' % (smb_year))
