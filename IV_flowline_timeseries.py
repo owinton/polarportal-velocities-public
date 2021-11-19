@@ -56,10 +56,10 @@ def IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile
 
 
     # Debugging
-    print(CFL_file)
-    print(type(cfl))
-    print(type(cfl.crs))
-    print(cfl.crs)
+    # print(CFL_file)
+    # print(type(cfl))
+    # print(type(cfl.crs))
+    # print(cfl.crs)
     # CFL come in lat-lon, transform to polar stereographic (velocity data projection)
     try:
         inProj = pyproj.Proj(cfl.crs['init'])
