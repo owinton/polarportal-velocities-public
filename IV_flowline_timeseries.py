@@ -231,7 +231,7 @@ def IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile
     cbar.set_label('Ice velocity [m/day]')
     cbar.set_ticks([1, 67, 235, 350])
     cbar.set_ticklabels(['0.01', '0.1', '1', '10'])
-    cbar.set_clim([1, 389])
+    cs.set_clim([1, 389])
 
     # Plot calving front and flow line
     ax2.plot(X_cfl_plot, Y_cfl_plot, color='k', label='Calving front line')
