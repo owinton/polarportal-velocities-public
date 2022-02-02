@@ -21,7 +21,7 @@ Calls the following functions
     
 
 Created by Øyvind Andreas Winton (oew) on 12 February 2020
-Last edited by oew on 10 Mar 2021
+Last edited by oew on 02 Feb 2022
 '''
 
 IV_dir = './data/IV_data'
@@ -82,6 +82,6 @@ for file in IV_list:
             outfile = output_plots_to_upload + sep + filename
             CFL_file = CFL_dir + sep + glacier + '_frontlines_4326' + sep + glacier + CFL_year + sep + glacier + CFL_year + '.shp'
             FL_file = FL_dir + sep + glacier + '.txt'
-            IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile, mean_IV_file, bed_file)
+            #IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile, mean_IV_file, bed_file)
 
-    IV_ftp_upload(output_plots_to_upload, output_plots_uploaded)
+IV_ftp_upload(output_plots_to_upload, output_plots_uploaded)
