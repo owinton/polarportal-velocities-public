@@ -5,6 +5,6 @@
 !.gitignore
 !IV_download_data.py
 !IV_flowline_timeseries.py
-!IV_ftp_script.py
+!IV_ftp.py
 !IV_mean.py
 !IV_process_all.py
