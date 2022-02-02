@@ -19,7 +19,7 @@ def IV_ftp_upload(output_plots_to_upload, output_plots_uploaded):
     #ftp.cwd('upload')
     upload_list = [i for i in output_plots_to_upload if i.endswith('.png')]
     for upload_filename in upload_list:
-        file = open(os.path.join(output_plots_to_upload, upload_filename, 'rb')
+        file = open(os.path.join(output_plots_to_upload, upload_filename, 'rb'))
         ftp.storbinary(upload_filename, file)
         print('Uploaded {}'.format(filename))
         shutil.move(os.path.join(output_plots_to_upload, upload_filename), os.path.join(output_plots_uploaded, upload_filename))
