@@ -15,7 +15,7 @@ Last edited by oew on 02 Feb 2022
 """
 def IV_ftp_upload(output_plots_to_upload, output_plots_uploaded):
     ftp = ftplib.FTP('ftpserver.dmi.dk')
-    print(ftp.getwelcome());
+    print(ftp.getwelcome())
 
     # Credentials are stored in txt file not shared in the public repo.
     with open('../username_password.txt', 'r') as file:
@@ -32,7 +32,7 @@ def IV_ftp_upload(output_plots_to_upload, output_plots_uploaded):
     upload_list = [i for i in os.listdir(output_plots_to_upload) if i.endswith('.png')]
     for upload_filename in upload_list:
         file = open(os.path.join(output_plots_to_upload, upload_filename), 'rb')
-        ftpCommand = "STOR {}".format(upload_filename);
+        ftpCommand = "STOR {}".format(upload_filename)
         ftpResponse = ftp.storbinary(ftpCommand, file)
         print(ftpResponse)
         print('Uploaded {}'.format(upload_filename))
