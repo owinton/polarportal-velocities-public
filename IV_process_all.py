@@ -2,6 +2,7 @@ import os
 from IV_flowline_timeseries import IV_flowline_timeseries
 from IV_mean import IV_mean
 from IV_download_data import IV_download_data
+from IV_ftp import IV_ftp_upload
 '''
 Script for creating flow line time series of velocities for various glaciers.
 
@@ -82,3 +83,5 @@ for file in IV_list:
             CFL_file = CFL_dir + sep + glacier + '_frontlines_4326' + sep + glacier + CFL_year + sep + glacier + CFL_year + '.shp'
             FL_file = FL_dir + sep + glacier + '.txt'
             IV_flowline_timeseries(glacier, IV_file, CFL_file, FL_file, cm_file, outfile, mean_IV_file, bed_file)
+
+    IV_ftp_upload(output_plots_to_upload, output_plots_uploaded)
