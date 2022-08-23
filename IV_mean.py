@@ -13,7 +13,6 @@ Returns:
     String with directory+filename to latest mean velocity data set
     
 Created by: Øyvind Andreas Winton (oew) on 25 February 2020
-Last edited by oew on 10 Mar 2020 
 '''
 
 def IV_mean(IV_dir, IV_mean_dir):
