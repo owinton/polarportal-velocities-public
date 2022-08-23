@@ -27,7 +27,6 @@ are sometimes problematic to work with, and some bad practice coding is implemen
 This might mask other errors.
 
 Created by Øyvind Andreas Winton (oew) on 12 February 2020
-Last edited by oew on 10 Mar 2021
 
 '''
 

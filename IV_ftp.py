@@ -11,7 +11,7 @@ Inputs:
     
 
 Created by kaha on 25 Jun 2018
-Last edited by oew on 02 Feb 2022
+Edited by oew on 02 Feb 2022
 """
 def IV_ftp_upload(output_plots_to_upload, output_plots_uploaded):
     ftp = ftplib.FTP('ftpserver.dmi.dk')

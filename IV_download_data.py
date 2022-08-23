@@ -4,7 +4,6 @@ import os
 Function to download velocity data from from GEUS dataverse
 
 Created by Øyvind Andreas Winton (oew) on 10 Mar 2021
-Last edited by oew on 10 Mar 2021
 
 '''
 def IV_download_data():

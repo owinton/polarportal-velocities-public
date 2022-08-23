@@ -21,7 +21,6 @@ Calls the following functions
     
 
 Created by Øyvind Andreas Winton (oew) on 12 February 2020
-Last edited by oew on 02 Feb 2022
 '''
 
 IV_dir = './data/IV_data'
