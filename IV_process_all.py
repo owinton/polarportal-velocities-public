@@ -64,6 +64,7 @@ glaciers = [
 'IkertivaqB',
 'IkertivaqC',
 'IkertivaqD',]
+glaciers = ['Jakobshavn']
 
 # Download new velocity files, get list of files, and get/create most recent mean velocity file
 # IV_download_data()
